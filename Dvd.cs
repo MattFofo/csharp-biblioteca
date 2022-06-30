@@ -9,11 +9,12 @@ namespace csharp_biblioteca
     internal class Dvd : Item
     {
         protected int duration;
-        protected int serialNumber;
+        protected uint serialNumber;
 
-        public Dvd(int duration, int itemCode, string title, int year, string sector, bool isAvaible, int rack, string author) : base(itemCode, title, year, sector, isAvaible, rack, author)
+        public Dvd(int duration, uint itemCode, string title, int year, string sector, bool isAvaible, int rack, string author) : base(itemCode, title, year, sector, isAvaible, rack, author)
         {
             this.duration = duration;
+            this.serialNumber = itemCode;
         }
     }
 }

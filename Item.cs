@@ -8,15 +8,15 @@ namespace csharp_biblioteca
 {
     internal class Item
     {
-        protected int itemCode;
-        protected string title;
+        protected uint itemCode;
+        public string title;
         protected int year;
         protected string sector;
         protected bool isAvaible;
         protected int rack;
         protected string author;
 
-        public Item(int itemCode, string title, int year, string sector, bool isAvaible, int rack, string author)
+        public Item(uint itemCode, string title, int year, string sector, bool isAvaible, int rack, string author)
         {
             this.itemCode = itemCode;
             this.title = title;
@@ -26,5 +26,24 @@ namespace csharp_biblioteca
             this.rack = rack;
             this.author = author;
         }
+
+        //public void PrintListItems()
+        //{
+        //    foreach (var item in this.items)
+        //    {
+        //        Console.WriteLine("********************");
+
+        //        Console.WriteLine(item.title);
+        //        Console.WriteLine(item.year);
+        //        Console.WriteLine(item.sector);
+        //        Console.WriteLine(item.isAvaible);
+        //        Console.WriteLine(item.rack);
+        //        Console.WriteLine(item.author);
+
+        //        Console.WriteLine("********************");
+
+
+        //    }
+        //}
     }
 }
