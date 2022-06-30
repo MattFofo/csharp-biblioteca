@@ -8,14 +8,14 @@ namespace csharp_biblioteca
 {
     internal class Loan
     {
-        protected User user;
+        protected User borrower;
         protected List<Item> items;
         protected string dateStartBorrow = null;
         protected string dateEndBorrow = null;
 
         public Loan(User user, List<Item> items)
         {
-            this.user = user;
+            this.borrower = user;
             this.items = items;
         }
 

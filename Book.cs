@@ -10,10 +10,10 @@ namespace csharp_biblioteca
     {
         protected int nPages;
         protected uint ISBN;
-        public Book(int nPages, uint itemCode, string title, int year, string sector, bool isAvaible, int rack, string author) : base(itemCode, title, year, sector, isAvaible, rack, author)
+        public Book(uint iSBN, int nPages, string title, int year, string sector, bool isAvaible, int rack, string author) : base(iSBN, title, year, sector, isAvaible, rack, author)
         {
             this.nPages = nPages;
-            this.ISBN = itemCode;
+            this.ISBN = iSBN;
         }
     }
 }

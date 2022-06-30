@@ -27,23 +27,5 @@ namespace csharp_biblioteca
             this.author = author;
         }
 
-        //public void PrintListItems()
-        //{
-        //    foreach (var item in this.items)
-        //    {
-        //        Console.WriteLine("********************");
-
-        //        Console.WriteLine(item.title);
-        //        Console.WriteLine(item.year);
-        //        Console.WriteLine(item.sector);
-        //        Console.WriteLine(item.isAvaible);
-        //        Console.WriteLine(item.rack);
-        //        Console.WriteLine(item.author);
-
-        //        Console.WriteLine("********************");
-
-
-        //    }
-        //}
     }
 }

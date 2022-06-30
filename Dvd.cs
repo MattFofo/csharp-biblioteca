@@ -11,10 +11,10 @@ namespace csharp_biblioteca
         protected int duration;
         protected uint serialNumber;
 
-        public Dvd(int duration, uint itemCode, string title, int year, string sector, bool isAvaible, int rack, string author) : base(itemCode, title, year, sector, isAvaible, rack, author)
+        public Dvd(uint SN, int duration, string title, int year, string sector, bool isAvaible, int rack, string author) : base(SN, title, year, sector, isAvaible, rack, author)
         {
             this.duration = duration;
-            this.serialNumber = itemCode;
+            this.serialNumber = SN;
         }
     }
 }
