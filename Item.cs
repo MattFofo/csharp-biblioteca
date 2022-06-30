@@ -8,7 +8,7 @@ namespace csharp_biblioteca
 {
     internal class Item
     {
-        protected uint itemCode;
+        public uint itemCode;
         public string title;
         protected int year;
         protected string sector;

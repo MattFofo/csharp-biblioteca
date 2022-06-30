@@ -36,5 +36,39 @@ namespace csharp_biblioteca
             }
             return result;
         }
+
+        public Item SearchItem(uint itemCode)
+        {
+            Item result = null;
+            foreach (var item in items)
+            {
+
+                if (item.itemCode == itemCode)
+                {
+                    result = item;
+                    break;
+
+                }
+                else
+                {
+                    result = null;
+                }
+            }
+            return result;
+        }
+
+        public void PrintSearchResult(Item result)
+        {
+            if (result != null)
+            {
+                Console.WriteLine(result.title);
+
+            }
+            else
+            {
+                Console.WriteLine("nessun risultato");
+
+            }
+        }
     }
 }

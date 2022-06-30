@@ -76,16 +76,6 @@ users.Add(user2);
 Library library = new Library(users, items);
 
 
-Item result = library.SearchItem("Matrix");
-
-if (result != null)
-{
-    Console.WriteLine(result.title);
-
-}else
-{
-    Console.WriteLine("nessun risultato");
-
-}
+library.PrintSearchResult(library.SearchItem("Matrix"));
 
 
